@@ -1,0 +1,20 @@
+{
+	"installed_packages":
+	[
+		"BracketHighlighter",
+		"ColorPicker",
+		"Emmet",
+		"Handlebars",
+		"JavaScript & NodeJS Snippets",
+		"LESS",
+		"Markdown Preview",
+		"Quick File Creator",
+		"SublimeLinter",
+		"SublimeLinter-contrib-scss-lint",
+		"SublimeLinter-jscs",
+		"SublimeLinter-jshint",
+		"Syntax Highlighting for Sass",
+		"Theme - Spacegray",
+		"Vintageous"
+	]
+}
