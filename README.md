@@ -4,8 +4,9 @@ For Mac OS X
 #### Homebrew
 ```
 brew install phinze/cask/brew-cask fish vim --with-lua
-brew cask install iterm2
+brew cask install iterm2 spectacle
 ```
+Which window manager to install? spectacle or moom?
 #### Symlinks
 ```
 ln -s ~/dotfiles/.vimrc ~/.vimrc
@@ -23,5 +24,8 @@ ln -s ~/dotfiles/fish/functions/updatevim.fish ~/.config/fish/functions/updatevi
 #### TODO
 - Script symlinking
 - Script Homebrew install
-- Script Homebrew installs
+- ~~Script Homebrew installs~~ [brewfile](http://robots.thoughtbot.com/brewfile-a-gemfile-but-for-homebrew)
+- .cask file?
+- [EditorConfig?](http://editorconfig.org/)
+- Fork [Mathia's dotfiles](http://mths.be/dotfiles) instead? [a partial walkthrough](http://code.tutsplus.com/tutorials/setting-up-a-mac-dev-machine-from-zero-to-hero-with-dotfiles--net-35449)
 - Arch Linux version?
