@@ -1,4 +1,4 @@
-" Use Vim settings, rather then Vi settings (much better!).
+"o Use Vim settings, rather then Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
@@ -82,18 +82,6 @@ if executable('ag')
   let g:ctrlp_user_command = 'ag %s -l --nocolor -g "" --ignore "bower_components/" --ignore "node_modules/"'
   let g:ctrlp_use_caching = 0           " ag is fast enough that CtrlP doesn't need to cache
 endif
-
-" Display extra whitespace
-" set list listchars=tab:»·,trail:·
-
-" set list                          " Show invisible characters
-" set listchars=""                  " Reset the listchars
-" set listchars=tab:\ \             " a tab should display as "  ", trailing whitespace as "."
-" set listchars+=trail:.            " show trailing spaces as dots
-" set listchars+=extends:>          " The character to show in the last column when wrap is
-"                                   " of the line continues beyond the right of the screen
-" set listchars+=precedes:<         " The character to show in the last column when wrap is
-"                                   " off and the line continues beyond the left of the screen
 
 set ttyfast   " Send more characters fo redraws
 if has('mouse')
