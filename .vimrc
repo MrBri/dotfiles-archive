@@ -26,26 +26,47 @@ call vundle#rc()
 " let Vundle manage Vundle, required
 Bundle 'gmarik/vundle'
 Bundle 'altercation/vim-colors-solarized'
-set t_Co=256
-syntax enable
-set background=dark
-colorscheme solarized
 Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-set laststatus=2                        " Always show status line, required for Powerline
 Bundle 'ctrlp.vim'
 Bundle 'tComment'
 Bundle 'scrooloose/syntastic'
-let g:syntastic_javascript_checkers = ['jscs', 'jshint']
 Bundle 'nathanaelkane/vim-indent-guides'
-" <Leader>ig
 Bundle 'Shougo/neocomplete'
 Bundle 'Shougo/neosnippet'
 Bundle 'Shougo/neosnippet-snippets'
 Bundle 'majutsushi/tagbar'
-nmap <F8> :TagbarToggle<CR>
 
 filetype plugin indent on               " required for vundle, allow plugins
 " To ignore plugin indent changes, instead use: filetype plugin on
+
+"" Plugin related settings
+" solarized
+set t_Co=256
+syntax enable
+set background=dark
+colorscheme solarized
+
+" Powerline
+set laststatus=2                        " Always show status line, required for Powerline
+
+" ctrlp
+" Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
+if executable('ag')
+  set grepprg=ag\ --nogroup\ --nocolor  " Use Ag over Grep
+
+  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g "" --ignore "bower_components/" --ignore "node_modules/"'
+  let g:ctrlp_use_caching = 0           " ag is fast enough that CtrlP doesn't need to cache
+endif
+
+" Syntastic
+let g:syntastic_javascript_checkers = ['jscs', 'jshint']
+
+" vim-indent-guides
+" <Leader>ig
+
+" tagbar
+nmap <F8> :TagbarToggle<CR>
 
 let mapleader = " "
 
@@ -55,7 +76,7 @@ set ruler                               " Show line and column number
 
 set pastetoggle=<F2>                    " Toggle auto-indenting, etc when pasting
 
-" Whitespace
+"" Whitespace
 set nowrap                              " don't wrap lines
 set tabstop=2                           " a tab is two spaces
 set shiftwidth=2                        " an autoindent (with <<) is two spaces
@@ -70,15 +91,6 @@ set ignorecase
 set smartcase
 " Toggle search highlighting
 map <Leader>h :set invhls <CR>
-
-" Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
-if executable('ag')
-  set grepprg=ag\ --nogroup\ --nocolor  " Use Ag over Grep
-
-  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
-  let g:ctrlp_user_command = 'ag %s -l --nocolor -g "" --ignore "bower_components/" --ignore "node_modules/"'
-  let g:ctrlp_use_caching = 0           " ag is fast enough that CtrlP doesn't need to cache
-endif
 
 set ttyfast                             " Send more characters for redraws
 if has('mouse')
