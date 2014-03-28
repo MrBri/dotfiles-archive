@@ -22,10 +22,17 @@ ln -s ~/dotfiles/fish/functions/updatevim.fish ~/.config/fish/functions/updatevi
 #### Goals
 [KISS](http://en.wikipedia.org/wiki/KISS_principle)
 #### TODO
+- Use gulp! Comfirm symlink actions? or other prompt
 - Script symlinking
 - Script Homebrew install
 - ~~Script Homebrew installs~~ [brewfile](http://robots.thoughtbot.com/brewfile-a-gemfile-but-for-homebrew)
 - .cask file?
 - [EditorConfig?](http://editorconfig.org/)
-- Fork [Mathia's dotfiles](http://mths.be/dotfiles) instead? [a partial walkthrough](http://code.tutsplus.com/tutorials/setting-up-a-mac-dev-machine-from-zero-to-hero-with-dotfiles--net-35449)
-- Arch Linux version?
+- ~~Fork [Mathia's dotfiles](http://mths.be/dotfiles) instead? [a partial walkthrough](http://code.tutsplus.com/tutorials/setting-up-a-mac-dev-machine-from-zero-to-hero-with-dotfiles--net-35449). Nah.. js based? [Eduardo's](https://github.com/eduardolundgren/dotfiles)~~
+
+
+### Arch linux notes
+- Install powerline font (pacman -S --needed base-devel, yaourt install)
+- pacman -S gvim (for python, lua, and clipboard)
+- fish functions/ folder didn't exist
+- Why are the theme colors funky?
