@@ -5,6 +5,7 @@ For Mac OS X
 ```
 brew install phinze/cask/brew-cask fish vim --with-lua
 brew cask install iterm2 spectacle
+npm install -g jscs jshint jsonlint
 ```
 Which window manager to install? spectacle or moom?
 #### Symlinks
@@ -12,6 +13,7 @@ Which window manager to install? spectacle or moom?
 ln -s ~/dotfiles/.vimrc ~/.vimrc
 ln -s ~/dotfiles/com.googlecode.iterm2.plist ~/Library/Preferences/com.googlecode.iterm2.plist
 ln -s ~/dotfiles/fish/config.fish ~/.config/fish/config.fish
+ln -s ~/dotfiles/fish/functions/* ~/.config/fish/functions/
 ln -s ~/dotfiles/Sublime\ Text\ 3/Package\ Control.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Package\ Control.sublime-settings
 ln -s ~/dotfiles/Sublime\ Text\ 3/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
 ```
@@ -22,6 +24,7 @@ ln -s ~/dotfiles/fish/functions/updatevim.fish ~/.config/fish/functions/updatevi
 #### Goals
 [KISS](http://en.wikipedia.org/wiki/KISS_principle)
 #### TODO
+- Submodule vundle? Needs to be git cloned.
 - Use gulp! Comfirm symlink actions? or other prompt
 - Script symlinking
 - Script Homebrew install
