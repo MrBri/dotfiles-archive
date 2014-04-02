@@ -35,6 +35,7 @@ Bundle 'Shougo/neocomplete'
 Bundle 'Shougo/neosnippet'
 Bundle 'Shougo/neosnippet-snippets'
 Bundle 'majutsushi/tagbar'
+Bundle 'Raimondi/delimitMate'
 
 filetype plugin indent on               " required for vundle, allow plugins
 " To ignore plugin indent changes, instead use: filetype plugin on
