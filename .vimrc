@@ -1,6 +1,5 @@
-" Use Vim settings, rather then Vi settings (much better!).
-" This must be first, because it changes other options as a side effect.
-set nocompatible
+set nocompatible                        " Use Vim settings, rather then Vi settings (much better!).
+                                        " This must be first, because it changes other options as a side effect.
 
 filetype off                            " Required for vundle
 set shell=bash                          " Make vim friendly with fishshell
@@ -16,15 +15,12 @@ set wildmenu                            " Make the command-line completion bette
 set wildmode=list:longest               " List all matches
 set clipboard=unnamed                   " Access the system clipboard
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/vundle/ 
+set rtp+=~/.vim/bundle/vundle/          " set the runtime path to include Vundle and initialize
 call vundle#rc()
-" alternatively, pass a path where Vundle should install bundles
-"let path = '~/some/path/here'
-"call vundle#rc(path)
 
 " let Vundle manage Vundle, required
 Bundle 'gmarik/vundle'
+" All me plugins
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Bundle 'ctrlp.vim'
@@ -38,7 +34,6 @@ Bundle 'majutsushi/tagbar'
 Bundle 'Raimondi/delimitMate'
 
 filetype plugin indent on               " required for vundle, allow plugins
-" To ignore plugin indent changes, instead use: filetype plugin on
 
 "" Plugin related settings
 " solarized
@@ -87,6 +82,7 @@ endif
 " tagbar
 nmap <F8> :TagbarToggle<CR>
 
+"" Back to regular vim
 let mapleader = " "
 
 set number                              " Show line numbers
@@ -108,6 +104,7 @@ set incsearch
 set hlsearch
 set ignorecase
 set smartcase
+
 " Toggle search highlighting
 map <Leader>h :set invhls <CR>
 
@@ -125,6 +122,7 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
- 
-cmap w!! w !sudo tee % >/dev/null       " lets you use w!! to sudo after opening a file
+
+ " lets you use w!! to sudo after opening a file
+cmap w!! w !sudo tee % >/dev/null
 
