@@ -1,4 +1,4 @@
-![Setuptocat](https://octodex.github.com/images/setuptocat.jpg =350x)
+<img src="https://octodex.github.com/images/setuptocat.jpg" alt="Setuptocat" style="width: 350px;"/>
 
 Opinions:
 - The best editor/text theme: [Solarized dark](http://ethanschoonover.com/solarized)
