@@ -1,0 +1,6 @@
+[submodule "submodules/vundle"]
+	path = submodules/vundle
+	url = git@github.com:gmarik/Vundle.vim.git
+[submodule "submodules/.oh-my-fish"]
+	path = submodules/.oh-my-fish
+	url = git://github.com/bpinto/oh-my-fish.git
