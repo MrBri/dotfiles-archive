@@ -1,0 +1,7 @@
+[user]
+	name = Tyler Briles
+	email = tyler@mrbri.com
+[core]
+	editor = vim
+[push]
+	default = simple

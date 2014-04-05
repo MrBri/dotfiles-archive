@@ -1,14 +1,24 @@
-Work in progress...
+![Setuptocat](https://octodex.github.com/images/setuptocat.jpg)
+
+Opinions:
+- The best editor/text theme: [Solarized dark](http://ethanschoonover.com/solarized)
+- The best Unix shell: [Fish](fishshell.com)
+- The best browser: Google Chrome
+- Editors in circulation:
+  - vim
+  - Sublime Text 3
+  - Atom.io
 
 For Mac OS X
 #### Homebrew
 ```
 brew install phinze/cask/brew-cask fish vim --with-lua
-brew cask install iterm2 moom
+brew cask install iterm2 moom KeyRemap4MacBook PCKeyboardHack alfred google-chrome
 npm install -g jscs jshint jsonlint grunt-cli
 ```
 #### Symlinks
 ```
+ln -s ~/dotfiles/.gitconfig ~/
 ln -s ~/dotfiles/.vimrc ~/.vimrc
 ln -si ~/dotfiles/fish/config.fish ~/.config/fish/config.fish
 ln -s ~/dotfiles/fish/functions/* ~/.config/fish/functions/
@@ -33,10 +43,17 @@ Open `Preferences` and on the `General` tab check `Load preferences from a custo
 mkdir ~/.oh-my-fish
 ln -s ~/dotfiles/submodules/.oh-my-fish/* ~/.oh-my-fish
 ```
+##### KeyRemap4MacBook & PCKeyboardHack
+kr4mp & pckh currently only has export and import capabilities via its cli. That means no syncing, would need to export on each change.
+```
+sh ~/dotfiles/kr4mb.sh
+sh ~/dotfiles/pckh.sh
+```
+##### Alfred
+Alfred 2 requires setting the `Set sync folder...` under the `Advanced` tab of `Preferences`.
 #### Goals
 [KISS](http://en.wikipedia.org/wiki/KISS_principle)
 #### TODO
-- reuseable gitconfig
 - Use gulp! Comfirm symlink actions? or other prompt
 - Script symlinking
 - ~~Script Homebrew installs~~ [brewfile](http://robots.thoughtbot.com/brewfile-a-gemfile-but-for-homebrew)
