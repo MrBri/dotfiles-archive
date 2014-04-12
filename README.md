@@ -51,6 +51,13 @@ sh ~/dotfiles/pckh.sh
 ```
 ##### Alfred
 Alfred 2 requires setting the `Set sync folder...` under the `Advanced` tab of `Preferences`.
+
+#### Mac preferences
+Disable dashboard:
+```
+defaults write com.apple.dashboard mcx-disabled -boolean YES
+killall Dock
+```
 #### Goals
 [KISS](http://en.wikipedia.org/wiki/KISS_principle)
 #### TODO
