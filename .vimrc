@@ -57,6 +57,7 @@ endif
 
 " Syntastic
 let g:syntastic_javascript_checkers = ['jscs', 'jshint']
+let g:syntastic_mode_map = { 'mode': 'passive' }
 
 " vim-indent-guides
 " <Leader>ig
