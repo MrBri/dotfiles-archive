@@ -32,6 +32,7 @@ Bundle 'Shougo/neosnippet'
 Bundle 'Shougo/neosnippet-snippets'
 Bundle 'majutsushi/tagbar'
 Bundle 'Raimondi/delimitMate'
+Bundle 'pinktrink/localvimrc'
 
 filetype plugin indent on               " required for vundle, allow plugins
 
@@ -117,6 +118,9 @@ set ttymouse=xterm2                     " Set to your terminal that supports mou
 
 set splitbelow                          " Open new split panes to right and bottom, which feels more natural
 set splitright
+
+let g:netrw_liststyle=3                 " Prefer tree view for browsing
+set autochdir                           " Automatically change directory to the current file
 
 " Quicker window movement
 nnoremap <C-j> <C-w>j
