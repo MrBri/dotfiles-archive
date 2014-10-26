@@ -15,25 +15,26 @@ set wildmenu                            " Make the command-line completion bette
 set wildmode=list:longest               " List all matches
 set clipboard=unnamed                   " Access the system clipboard
 
-set rtp+=~/.vim/bundle/vundle/          " set the runtime path to include Vundle and initialize
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim       " set the runtime path to include Vundle and initialize
+call vundle#begin()
 
 " let Vundle manage Vundle, required
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
 " All me plugins
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-Bundle 'ctrlp.vim'
-Bundle 'tComment'
-Bundle 'scrooloose/syntastic'
-Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'Shougo/neocomplete'
-Bundle 'Shougo/neosnippet'
-Bundle 'Shougo/neosnippet-snippets'
-Bundle 'majutsushi/tagbar'
-Bundle 'Raimondi/delimitMate'
-Bundle 'pinktrink/localvimrc'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'bling/vim-airline'
+Plugin 'ctrlp.vim'
+Plugin 'tComment'
+Plugin 'scrooloose/syntastic'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'Shougo/neocomplete'
+Plugin 'Shougo/neosnippet'
+Plugin 'Shougo/neosnippet-snippets'
+Plugin 'majutsushi/tagbar'
+Plugin 'Raimondi/delimitMate'
+Plugin 'pinktrink/localvimrc'
 
+call vundle#end()                       " required for vundle
 filetype plugin indent on               " required for vundle, allow plugins
 
 "" Plugin related settings
