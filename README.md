@@ -61,6 +61,8 @@ killall Dock
 #### Goals
 [KISS](http://en.wikipedia.org/wiki/KISS_principle)
 #### TODO
+- **http://editorconfig.org/ (to use across all editors)**
+- **.gitconfig (global settings for myself)**
 - Use gulp! Comfirm symlink actions? or other prompt
 - Script symlinking
 - ~~Script Homebrew installs~~ [brewfile](http://robots.thoughtbot.com/brewfile-a-gemfile-but-for-homebrew)
