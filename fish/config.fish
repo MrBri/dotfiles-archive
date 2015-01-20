@@ -1,16 +1,11 @@
-# Path to your oh-my-fish.
-set fish_path $HOME/.oh-my-fish
+set fish_function_path $fish_function_path "/usr/local/lib/python3.4/site-packages/powerline/bindings/fish"
+powerline-setup
 
-# Theme
-set fish_theme agnoster
+. (rbenv init -|psub)
 
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-fish/plugins/*)
-# Custom plugins may be added to ~/.oh-my-fish/custom/plugins/
-# Example format: set fish_plugins autojump bundler
-set fish_plugins brew node rbenv
+test -s /Users/m467695/.nvm-fish/nvm.fish; and source /Users/m467695/.nvm-fish/nvm.fish
 
-# Path to your custom folder (default path is $FISH/custom)
-#set fish_custom $HOME/dotfiles/oh-my-fish
+set -xg HOMEBREW_GITHUB_API_TOKEN 596de92cb7b4ec0d0998cd543daf6836eb251fbe
 
-# Load oh-my-fish configuration.
-. $fish_path/oh-my-fish.fish
+set PATH $HOME/.jenv/bin $PATH
+. (jenv init -)
