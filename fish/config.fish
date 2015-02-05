@@ -3,9 +3,7 @@ powerline-setup
 
 . (rbenv init -|psub)
 
-test -s /Users/m467695/.nvm-fish/nvm.fish; and source /Users/m467695/.nvm-fish/nvm.fish
-
-set -xg HOMEBREW_GITHUB_API_TOKEN 596de92cb7b4ec0d0998cd543daf6836eb251fbe
+test -s $HOME/.nvm-fish/nvm.fish; and source $HOME/.nvm-fish/nvm.fish
 
 set PATH $HOME/.jenv/bin $PATH
 . (jenv init -)
