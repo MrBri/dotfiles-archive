@@ -1,20 +1,21 @@
 {
-	"caret_extra_bottom": 2,
-	"caret_extra_top": 2,
+	"caret_extra_bottom": 3,
+	"caret_extra_top": 3,
 	"caret_extra_width": 2,
 	"caret_style": "phase",
-	"color_scheme": "Packages/User/Solarized (Dark) (SL).tmTheme",
-	"draw_white_space": "all",
-	"font_size": 14,
+	"color_scheme": "Packages/User/SublimeLinter/Oceanic Next (SL).tmTheme",
+	"font_size": 13,
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"Vintageous"
+		"Vintage"
 	],
+	"overlay_scroll_bars": "enabled",
 	"tab_size": 2,
-	"theme": "Spacegray.sublime-theme",
+	"theme": "Seti.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
-	"vintage_ctrl_keys": true,
-	"vintage_start_in_command_mode": true
+	"vintageous_use_ctrl_keys": true,
+	"auto_complete_triggers": [ {"selector": "text.html", "characters": "<"}, {"selector": "source.js", "characters": "."} ],
+	"tern_argument_hints": true
 }
