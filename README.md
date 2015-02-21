@@ -22,6 +22,16 @@ ln -s ~/dotfiles/fish/functions/* ~/.config/fish/functions/
 ln -s ~/dotfiles/Sublime\ Text\ 3/Package\ Control.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Package\ Control.sublime-settings
 ln -s ~/dotfiles/Sublime\ Text\ 3/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
 ```
+
+##### Tern
+[tern_for_sublime](https://github.com/marijnh/tern_for_sublime)
+###### Critical steps
+- clone project into Sublime and `npm install` (node tern)
+- verify settings in Prefernces.sublime-settings for tern (`auto_complete_triggers` and `tern_argument_hints`)
+- create a [.tern-project](https://github.com/MrBri/dotfiles/blob/master/.tern-project) file for each project (allows searching of requirejs, commonjs modules, etc)
+- autocompletes after dot, after start of paranentheses shows argument hints for function
+- alt+. goes to definition of thing, alt+j to go back
+
 ##### aText
 ```
 open ~/dotfiles/aText/Data.atext
