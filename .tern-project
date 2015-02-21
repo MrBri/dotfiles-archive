@@ -1,0 +1,15 @@
+{
+  "libs": [
+    "browser",
+    "jquery",
+    "ecma5",
+    "underscore"
+  ],
+  "plugins": {
+    "requirejs": {
+      "baseURL": "./target/mcom/assets/scripts",
+      "paths": {}
+    },
+    "node": {}
+  }
+}
