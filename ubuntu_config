@@ -1,0 +1,48 @@
+// Turn into docker or chef, etc file??
+
+sudo apt-add-repository ppa:fish-shell/release-2
+sudo apt-get update
+sudo apt-get install fish
+
+chsh -s /usr/bin/fish
+
+touch ~/.config/fish/config.fish
+
+curl https://raw.githubusercontent.com/Alex7Kom/nvm-fish/master/install.fish | fish
+
+// restart shell
+
+nvm install 0.12
+
+nvm alias default 0.12
+
+npm update -g npm
+
+sudo apt-get install vim-nox
+
+sudo apt-get install git
+
+sudo apt-get install python-software-properties
+// y to accept
+sudo add-apt-repository ppa:keithw/mosh
+// enter to continue
+sudo apt-get update
+sudo apt-get install mosh
+// y to accept
+
+
+// Linux Dash to monitor system
+
+// allow non-root user to use port 80?
+// path to node isn't correct
+sudo apt-get install libcap2-bin
+sudo setcap cap_net_bind_service=+ep /usr/local/bin/node
+
+// using 'ip' instead of 'ifconfig'
+// 'ip addr' to show ip address and mac address etc
+
+ssh port 4555
+
+mosh --ssh="ssh -p 4555" ty@192.168.1.246
+
+sudo apt-get install nginx

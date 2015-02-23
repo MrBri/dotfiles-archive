@@ -1,4 +1,15 @@
 {
+	"auto_complete_triggers":
+	[
+		{
+			"characters": "<",
+			"selector": "text.html"
+		},
+		{
+			"characters": ".",
+			"selector": "source.js"
+		}
+	],
 	"caret_extra_bottom": 3,
 	"caret_extra_top": 3,
 	"caret_extra_width": 2,
@@ -12,10 +23,9 @@
 	],
 	"overlay_scroll_bars": "enabled",
 	"tab_size": 2,
+	"tern_argument_hints": true,
 	"theme": "Seti.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
-	"vintageous_use_ctrl_keys": true,
-	"auto_complete_triggers": [ {"selector": "text.html", "characters": "<"}, {"selector": "source.js", "characters": "."} ],
-	"tern_argument_hints": true
+	"vintageous_use_ctrl_keys": true
 }
