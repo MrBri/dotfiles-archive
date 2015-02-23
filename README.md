@@ -16,6 +16,7 @@ brew install rbenv --HEAD
 ```
 ln -s ~/dotfiles/.gitconfig ~/
 ln -s ~/dotfiles/.vimrc ~/.vimrc
+ln -s ~/dotfiles/filetype.vim ~/.vim/
 ln -si ~/dotfiles/fish/config.fish ~/.config/fish/config.fish
 mkdir ~/.config/fish/functions
 ln -s ~/dotfiles/fish/functions/* ~/.config/fish/functions/

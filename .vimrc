@@ -34,6 +34,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'Raimondi/delimitMate'
 Plugin 'pinktrink/localvimrc'
 Plugin 'editorconfig-vim'
+Plugin 'nginx.vim'
 
 call vundle#end()                       " required for vundle
 filetype plugin indent on               " required for vundle, allow plugins
