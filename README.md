@@ -3,7 +3,7 @@ Opinions:
 - best browser: Google Chrome
 - best commandline/default editor: vim
 - best editor: Sublime Text 3 with Vintageous
-- best editor/text theme: [Solarized dark](http://ethanschoonover.com/solarized)
+- best editor/text theme: [Oceanic Next](https://github.com/voronianski/oceanic-next-theme) then [Solarized dark](http://ethanschoonover.com/solarized)
 - best text expand for mac: [aText](https://www.trankynam.com/atext/)
 
 For Mac OS X
@@ -61,8 +61,10 @@ killall Dock
 #### Goals
 [KISS](http://en.wikipedia.org/wiki/KISS_principle)
 #### TODO
-- Use gulp! Comfirm symlink actions? or other prompt
-- Script symlinking
+- Use [dotbot](https://github.com/anishathalye/dotbot)!!!
+- Versions manager for Node so far [nvm-fish-wrapper](https://github.com/passcod/nvm-fish-wrapper). Submitted issue for [Nave](https://github.com/isaacs/nave/issues/68)
+- ~~Use gulp! Comfirm symlink actions? or other prompt~~
+- ~~Script symlinking~~
 - ~~Script Homebrew installs~~ [brewfile](http://robots.thoughtbot.com/brewfile-a-gemfile-but-for-homebrew)
 - .cask file?
 - ~~Fork [Mathia's dotfiles](http://mths.be/dotfiles) instead? [a partial walkthrough](http://code.tutsplus.com/tutorials/setting-up-a-mac-dev-machine-from-zero-to-hero-with-dotfiles--net-35449). Nah.. js based? [Eduardo's](https://github.com/eduardolundgren/dotfiles)~~
