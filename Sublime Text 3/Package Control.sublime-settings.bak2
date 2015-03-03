@@ -1,4 +1,5 @@
 {
+	"debug": false,
 	"in_process_packages":
 	[
 	],
@@ -8,13 +9,23 @@
 		"Babel",
 		"EditorConfig",
 		"Emmet",
+		"fish-shell",
 		"GitGutter",
 		"Gutter Color",
+		"Handlebars",
+		"Javascript Beautify",
 		"Oceanic Next Color Scheme",
 		"Package Control",
+		"Pretty JSON",
+		"Sass",
 		"Seti_UI",
+		"Solarized Color Scheme",
 		"SublimeLinter",
 		"SublimeLinter-contrib-eslint",
+		"Sublimerge Pro",
+		"Theme - Soda SolarizedDark",
+		"Theme - Spacegray",
+		"URLEncode",
 		"Vintageous"
 	]
 }

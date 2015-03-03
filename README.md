@@ -20,8 +20,12 @@ ln -s ~/dotfiles/filetype.vim ~/.vim/
 ln -si ~/dotfiles/fish/config.fish ~/.config/fish/config.fish
 mkdir ~/.config/fish/functions
 ln -s ~/dotfiles/fish/functions/* ~/.config/fish/functions/
+ln -s ~/dotfiles/.tern-project ~/.tern-project
 ln -s ~/dotfiles/Sublime\ Text\ 3/Package\ Control.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Package\ Control.sublime-settings
 ln -s ~/dotfiles/Sublime\ Text\ 3/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
+ln -s ~/dotfiles/Sublime\ Text\ 3/JavaScript\ \(Babel\).sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/JavaScript\ \(Babel\).sublime-settings
+ln -s ~/dotfiles/Sublime\ Text\ 3/JavaScript.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/JavaScript.sublime-settings
+ln -s ~/dotfiles/Sublime\ Text\ 3/GutterColor.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/GutterColor.sublime-settings
 ```
 #### Sublime Text
 ##### Tern
