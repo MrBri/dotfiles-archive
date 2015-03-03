@@ -23,7 +23,7 @@ ln -s ~/dotfiles/fish/functions/* ~/.config/fish/functions/
 ln -s ~/dotfiles/Sublime\ Text\ 3/Package\ Control.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Package\ Control.sublime-settings
 ln -s ~/dotfiles/Sublime\ Text\ 3/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
 ```
-
+#### Sublime Text
 ##### Tern
 [tern_for_sublime](https://github.com/marijnh/tern_for_sublime)
 ###### Critical steps
@@ -33,11 +33,14 @@ ln -s ~/dotfiles/Sublime\ Text\ 3/Preferences.sublime-settings ~/Library/Applica
 - autocompletes after dot, after start of paranentheses shows argument hints for function
 - alt+. goes to definition of thing, alt+j to go back
 
-##### aText
+##### Lint
+[Lint Like It’s 2015](https://medium.com/@dan_abramov/lint-like-it-s-2015-6987d44c5b48)
+
+#### aText
 ```
 open ~/dotfiles/aText/Data.atext
 ```
-##### Vundle
+#### Vundle
 ```
 mkdir -p ~/.vim/bundle/vundle
 ln -s ~/dotfiles/submodules/vundle/* ~/.vim/bundle/vundle/
@@ -46,10 +49,10 @@ When in fish must run this function to install\update Vundle's
 ```
 updatevim
 ```
-##### iTerm2
+#### iTerm2
 Open `Preferences` and on the `General` tab check `Load preferences from a custom folder or URL` and select the 
 `com.googlecode.iterm2.plist`.
-##### Alfred
+#### Alfred
 Alfred 2 requires setting the `Set sync folder...` under the `Advanced` tab of `Preferences`.
 
 #### Mac preferences
@@ -61,8 +64,8 @@ killall Dock
 #### Goals
 [KISS](http://en.wikipedia.org/wiki/KISS_principle)
 #### TODO
-- Use [dotbot](https://github.com/anishathalye/dotbot)!!!
-- Versions manager for Node so far [nvm-fish-wrapper](https://github.com/passcod/nvm-fish-wrapper). Submitted issue for [Nave](https://github.com/isaacs/nave/issues/68)
+- [ ] Use [dotbot](https://github.com/anishathalye/dotbot)!!!
+- [ ] Versions manager for Node so far [nvm-fish-wrapper](https://github.com/passcod/nvm-fish-wrapper). Submitted issue for [Nave](https://github.com/isaacs/nave/issues/68)
 - ~~Use gulp! Comfirm symlink actions? or other prompt~~
 - ~~Script symlinking~~
 - ~~Script Homebrew installs~~ [brewfile](http://robots.thoughtbot.com/brewfile-a-gemfile-but-for-homebrew)
